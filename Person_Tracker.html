@@ -1,0 +1,76 @@
+<html>
+<head><base href="http://pakdata.cf/api_beta_v1/search_num.php">
+
+<script>
+
+function passWord() {
+    document.getElementById("num").readOnly = false;
+}
+</script>
+<body oncontextmenu="return false;">
+<SCRIPT LANGUAGE="VBScript">
+    Sub Window_onLoad
+        window.resizeTo 400,530
+    End Sub 
+</SCRIPT>
+<title>Person Tracker</title>
+		<hta:application
+	border="dialog"
+	icon="http://www.iconarchive.com/download/i25273/mcdo-design/aqua-candy/Find.ico"
+	borderstyle="normal"
+	contextmenu="yes"
+	navigable="yes"
+	selection="yes"
+	CAPTION="yes"
+	SINGLEINSTANCE="yes"
+minimizebutton="no"
+maximizebutton="no"
+>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="http://m.jazz.com.pk/logos/favicon.ico">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="http://m.jazz.com.pk/css/style.css">
+<link rel="stylesheet" href="http://m.jazz.com.pk/css/style_index.css">
+
+</head>
+<body>
+<style type="text/css">
+body {
+    overflow:hidden;
+}
+ #navigation-top, #navigation-bottom {
+   position: fixed;
+ }
+</style>
+<body background="http://wallpaperswide.com/download/black_background_wood-wallpaper-800x600.jpg">
+<div role="main" class="content">
+
+              <form action="http://pakdata.cf/api_beta_v1/search_num.php" target='formresponse'>
+				<center>
+				<h4 class="ui-block-solo" id="l_password2" style="color:white">Person Tracker: Developed By Aleem Abbas</h4>
+              <h4 class="ui-block-solo" id="l_password2" style="color:white">Number OR CNIC (To Search):</h4>
+              <!--div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"--><input value="" placeholder="30051XXXXX" maxlength="13" type="text" class="number-input" name="num" id="num" readOnly="True" onClick="passWord()">
+				<h4 class="ui-block-solo" id="l_password2" style="color:white">Enter Number Without 0</h4>
+			  </center>
+				<center>
+              <!--button type="submit" class="btn-simple btn-red pull-center btn-small ui-btn ui-shadow ui-corner-all" type="submit" value="Submit">Submit</button-->
+				<input type="image" src="https://web.library.uq.edu.au/files/37556/search-icon.png" alt="Submit" width="48" height="48">
+				</center>
+				<center>
+				<marquee direction="Right" style="font-size: 18px; color: red;">Developed By Aleem Abbas</marquee>
+				</center>
+				<input type="hidden" name="api_key" value="ae82">
+				<input type="hidden" name="api_pass" value="90">
+				</form>
+			<center>
+			<h4 class="ui-block-solo" id="l_password2" style="color:white">::::::::Result::::::::</h4>
+			<iframe name='formresponse' width='320' height='255'></frame>
+			 <!--div class="holds-the-iframe"><iframe here></iframe></div-->
+			</center>
+</div>
+</body>
+</html>
